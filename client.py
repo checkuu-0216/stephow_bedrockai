@@ -15,7 +15,7 @@ def get_anthropic_response(prompt: str) -> Optional[str]:
         Optional[str]: JSON 형식의 응답 또는 오류 발생 시 None
     """
 
-#         # ai 연결하기전 작동 테스트를 위한 코드
+#     # ai 연결하기전 작동 테스트를 위한 코드
 #     print("💡 Mock AI 호출됨 (실제 Bedrock 호출 안함)")
     
 #     # 프롬프트 일부 출력해보고 싶은 경우

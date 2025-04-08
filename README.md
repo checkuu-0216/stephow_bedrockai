@@ -56,7 +56,7 @@ main.py 실행
 | `prompt_builder.py` | step 데이터로부터 AI에 전달할 프롬프트를 구성하는 로직 포함 |
 | `README.md` | 프로젝트 설명 파일 (현재 문서) |
 
-💬 AI 프롬프트 내용 (한글 해석)
+### 💬 AI 프롬프트 내용 (한글 해석)
 <details> <summary>👉 Claude 모델에 전달되는 프롬프트 전체 보기 (한글 해석)</summary> <br>
 
 ```text
@@ -134,6 +134,7 @@ def get_anthropic_response(prompt: str) -> Optional[str]:
     <response> {"title": "stephow.com에서 계정을 등록하는 방법"} </response>
     """
 ```
+<br>
 
 ## 🔐 AWS 연동 전 확인 사항
 .env 파일 또는 환경 변수에 다음 정보가 필요합니다:
@@ -146,12 +147,16 @@ AWS_DEFAULT_REGION=us-east-1
 
 AWS 자격 증명이 환경 변수에 설정되지 않았습니다.
 
+<br>
+
 ## 🔁 제목 생성 횟수 제한
 한 번의 메뉴얼 세션에서 제목은 최대 3회까지 생성 가능합니다.
 
 title_generation_count 변수를 통해 횟수를 관리하며, 초과 시 메시지 출력 후 중단됩니다.
 
 제목 자동 생성기는 최대 3회까지 가능합니다.
+
+<br>
 
 ## 📌 실행 방법
 
@@ -161,3 +166,6 @@ AWS_SECRET_ACCESS_KEY=...
 
 ### 2. 메인 파일 실행
 python main.py
+
+### 3. 결과
+생성된 제목이 terminal에 출력됩니다.
